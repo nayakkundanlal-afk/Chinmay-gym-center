@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #080808;
+    --bg-secondary: #151515;
+    --accent-lime: #C6FF00;
+    --text-muted: #A5A5A5;
+  }
+
+  body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Utilities for Neon/Electric Lime Glows & Fitness Aesthetic */
+.text-lime-electric {
+  color: #C6FF00;
+}
+
+.bg-lime-electric {
+  background-color: #C6FF00;
+}
+
+.border-lime-electric {
+  border-color: #C6FF00;
+}
+
+.glow-lime {
+  box-shadow: 0 0 25px rgba(198, 255, 0, 0.35);
+}
+
+.glow-lime-sm {
+  box-shadow: 0 0 12px rgba(198, 255, 0, 0.25);
+}
+
+.glow-lime-hover:hover {
+  box-shadow: 0 0 30px rgba(198, 255, 0, 0.5);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(198, 255, 0, 0.4);
+}
+
+/* Subtle carbon/grid pattern */
+.bg-carbon-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6FF00;
+}
